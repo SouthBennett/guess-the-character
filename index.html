@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess the Character</title>
+
+  <!-- STYLESHEET LINK -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JS LINKS -->
+   <script src="characters.js" defer></script>
+   <script src="script.js" defer></script>
 </head>
 <body>
-  
+
+  <!-- HOME SCREEN -->
+   <div id="home-screen" class="section">
+    <h1>Guess the Character</h1>
+    <p>Try to identify anime and video game characters before the timer runs out!</p>
+    <button id="start-btn">Start Game</button>
+    <p id="best-score-display"></p>
+   </div>
+
+   <!-- GAME SCREEN -->
+    <div id="game-screen" class="screen hidden">
+      <div class="top-info">
+        <span id="score">Score: 0</span>
+        <span id="round">Round: 1</span>
+        <span id="time">Time Left: 20s</span>
+      </div>
+
+      <div class="image-container">
+        <img id="character-image" class="silhouette" src="" alt="Character" />
+      </div>
+
+      <div class="controls">
+        <input id="guess-input" type="text" placeholder="Type your guess..." autocomplete="off" />
+        <button id="submit-btn">Submit Guess</button>
+        <button id="hint-btn">Hint</button>
+      </div>
+
+      <p id="hint-text"></p>
+      <p id="feedback"></p>
+    </div>
+
+    <!-- GAME OVER SCREEN-->
+     <div id="gameover-screen" class="screen hidden">
+      <h2>Game Over!</h2>
+      <p id="final-score"></p>
+      <p id="best-score-final"></p>
+      <button id="play-agian-btn">Play Again</button>
+     </div>
 </body>
 </html>
