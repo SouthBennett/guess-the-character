@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.screen {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-container {
+  margin: 20px auto;
+}
+
+#character-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  filter: brightness(0) contrast(100%);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px;
+}
